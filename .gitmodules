@@ -1,0 +1,18 @@
+[submodule "frameworks/microsoft-agent-framework"]
+	path = frameworks/microsoft-agent-framework
+	url = https://github.com/microsoft/agent-framework
+[submodule "frameworks/ag2"]
+	path = frameworks/ag2
+	url = https://github.com/ag2ai/ag2
+[submodule "frameworks/praisonai"]
+	path = frameworks/praisonai
+	url = https://github.com/MervinPraison/PraisonAI
+[submodule "frameworks/activepieces"]
+	path = frameworks/activepieces
+	url = https://github.com/activepieces/activepieces
+[submodule "frameworks/voltagent"]
+	path = frameworks/voltagent
+	url = https://github.com/VoltAgent/voltagent
+[submodule "frameworks/hermes-agent"]
+	path = frameworks/hermes-agent
+	url = https://github.com/NousResearch/hermes-agent
