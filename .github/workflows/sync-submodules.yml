@@ -5,23 +5,28 @@ on:
     - cron: '0 0 * * *'   # 每天自動執行
   workflow_dispatch:       # 可手動觸發
 
-permissions:
-  contents: write
+concurrency:
+  group: submodule-sync
+  cancel-in-progress: true
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # 強制使用 Node.js 24
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5   # 升級到最新版本，支援 Node.js 24
         with:
           submodules: true
           token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Update submodules
         run: |
           git submodule update --init --recursive --remote
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "Auto-sync submodules"
+          git add .
+          git commit -m "Auto-sync submodules" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
