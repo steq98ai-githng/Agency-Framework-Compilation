@@ -16,3 +16,6 @@
 [submodule "frameworks/hermes-agent"]
 	path = frameworks/hermes-agent
 	url = https://github.com/NousResearch/hermes-agent
+[submodule "frameworks/ag-kit"]
+	path = frameworks/ag-kit
+	url = https://github.com/vudovn/ag-kit
