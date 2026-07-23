@@ -22,3 +22,6 @@
 [submodule "frameworks/system-prompts-and-models-of-ai-tools"]
 	path = frameworks/system-prompts-and-models-of-ai-tools
 	url = https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
+[submodule "frameworks/system_prompts_leaks"]
+	path = frameworks/system_prompts_leaks
+	url = https://github.com/asgeirtj/system_prompts_leaks
