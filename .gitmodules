@@ -19,3 +19,6 @@
 [submodule "frameworks/ag-kit"]
 	path = frameworks/ag-kit
 	url = https://github.com/vudovn/ag-kit
+[submodule "frameworks/system-prompts-and-models-of-ai-tools"]
+	path = frameworks/system-prompts-and-models-of-ai-tools
+	url = https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
